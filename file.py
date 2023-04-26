@@ -54,13 +54,14 @@ plt.contour(X, Y, Z, levels=[scale_factor**1/4], colors='g')
 plt.contour(X, Y, Z, levels=[scale_factor**1/8], colors='#FFA500')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 s=""
-if r < 0.3 :
+f=abs(r)
+if f < 0.3 :
     s= "None or very weak"
-elif r>0.3  and r<0.5:
+elif f>0.3  and f<0.5:
     s="Weak"  
-elif r>0.5 and r < 0.7: 
+elif f>0.5 and f < 0.7: 
     s="Moderate"
-elif r > 0.7:
+elif f > 0.7:
     s="Strong"
 if r==0:
     st.subheader(s+" No Correlation")
