@@ -9,9 +9,9 @@ st.write(
 )
 with st.sidebar:
     # Create a slider for degree
-    a = st.slider("Covarience", -5.5,5.5,0.01)
-    b=st.slider("mean",0.0,4.0,0.1)
-    q=st.slider("varience", -7.5,7.5,0.01)
+    a = st.slider("Covarience of data distribution", -5.5,5.5,0.01)
+    b=st.slider("mean of data distribution",0.0,4.0,0.1)
+    q=st.slider("varience of data distribution", -7.5,7.5,0.01)
 
     # Create a slider for alpha
     
